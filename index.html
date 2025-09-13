@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Styling Effects and JavaScript Functions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav class="container">
+        <a href="#" class="home-tab">Home</a>
+        <a href="#" class="profile-tab">Profile</a>
+        <a href="#" class="contact-tab">Contact</a>
+    </nav>
+
+    <div class="content">
+        <h1>Welcome to My Website</h1>
+        <p>This is a sample paragraph to demonstrate CSS transitions and animations.</p>
+        <p id="word">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quam, esse quaerat omnis eveniet
+            officia neque quasi quod ipsum necessitatibus enim rerum vel veniam eius perferendis? Velit nostrum id
+            ipsam?</p>
+
+        <div>
+            <label for="name">Enter your name:</label>
+            <input type="text" id="nameInput" name="Name">
+            <button id="greetBtn">Greet Me</button>
+
+
+        </div>
+            
+
+
+        <!-- Button to trigger JavaScript function -->
+
+        <div class="shapes-container">
+
+            <h2>Calculate Area of Shapes</h2>
+
+            <div class="shapes" >
+                <div class="rectangle" id="rectangle"></div>
+                <div class="circle" id="circle"></div>
+                <div class="square" id="square"></div>
+                <div class="triangle" id="triangle"></div>
+
+            </div>
+
+            <br>
+            <div>
+                <label for="shapes">Choose a shape:</label>
+                <select id="shape" name="shapes">
+                    <option value="option">Select</option>
+                    <option value="rectangle">Rectangle</option>
+                    <option value="circle">Circle</option>
+                    <option value="square">Square</option>
+                    <option value="triangle">Triangle</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div id="shape-inputs">
+                <label for="width">Width: </label>
+                <input type="number" id="width">
+                <label for="height">Height:</label>
+                <input type="number" id="height">
+                <label for="radius">Radius: </label>
+                <input type="number" id="radius">
+            </div>
+
+            <br>
+
+            <button id="calcAreaBtn">Calculate Area</button>
+            <div id="resultArea"></div>
+        </div>
+    </div>
+
+    <!-- Link to the JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
